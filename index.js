@@ -3,7 +3,7 @@ module.exports = dialog
 function dialog (opts, cb) {
   var input = document.createElement('input')
 
-  if (opts.multiple)  input.setAttribute('multiple', '')
+  if (opts.multiple) input.setAttribute('multiple', '')
   if (opts.accept) input.setAttribute('accept', opts.accept)
   input.setAttribute('type', 'file')
   input.style.display = 'none'
